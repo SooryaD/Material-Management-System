@@ -1,0 +1,48 @@
+[
+  {
+    "id": "out-001",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-001",
+    "quantity": 100,
+    "project": "220kV Substation Jaipur",
+    "supervisor": "Rajesh Kumar",
+    "date": "2026-02-16T08:00:00Z"
+  },
+  {
+    "id": "out-002",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-002",
+    "quantity": 500,
+    "supplier": "Bolts",
+    "project": "400kV Tower Line Udaipur",
+    "supervisor": "Amit Sharma",
+    "date": "2026-02-17T10:00:00Z"
+  },
+  {
+    "id": "out-003",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-003",
+    "quantity": 20,
+    "project": "132kV Tower Foundation Delhi",
+    "supervisor": "Vijay Singh",
+    "date": "2026-02-18T07:30:00Z"
+  },
+  {
+    "id": "out-b63043f1",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-002",
+    "quantity": 100,
+    "project": "Test Tower Project",
+    "supervisor": "Test Lead",
+    "date": "2026-02-19T13:50:11.869Z"
+  },
+  {
+    "id": "out-8cd09170",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-002",
+    "quantity": 1000,
+    "project": "fs",
+    "supervisor": "sf",
+    "date": "2026-02-17"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "inw-001",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-001",
+    "quantity": 200,
+    "supplier": "Tata Steel Ltd",
+    "invoice": "INV-2026-0451",
+    "date": "2026-02-15T10:00:00Z"
+  },
+  {
+    "id": "inw-002",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-002",
+    "quantity": 1000,
+    "supplier": "Sundram Fasteners",
+    "invoice": "INV-2026-0452",
+    "date": "2026-02-16T11:30:00Z"
+  },
+  {
+    "id": "inw-003",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-004",
+    "quantity": 5000,
+    "supplier": "Sterlite Technologies",
+    "invoice": "INV-2026-0453",
+    "date": "2026-02-17T09:00:00Z"
+  },
+  {
+    "id": "inw-004",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-005",
+    "quantity": 100,
+    "supplier": "Aditya Birla Insulators",
+    "invoice": "INV-2026-0454",
+    "date": "2026-02-18T14:00:00Z"
+  },
+  {
+    "id": "inw-57a79afd",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-001",
+    "quantity": 50,
+    "supplier": "Test Supplier",
+    "invoice": "INV-TEST-001",
+    "date": "2026-02-19T13:50:11.862Z"
+  },
+  {
+    "id": "inw-42d348e6",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-008",
+    "quantity": 1,
+    "supplier": "1",
+    "invoice": "1",
+    "date": "2026-02-17"
+  },
+  {
+    "id": "inw-fc8e3d47",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "materialId": "mat-002",
+    "quantity": 1000,
+    "supplier": "1",
+    "invoice": "df",
+    "date": "2026-02-17"
+  }
+]

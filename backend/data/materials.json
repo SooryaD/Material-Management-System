@@ -1,0 +1,91 @@
+[
+  {
+    "id": "mat-001",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "name": "Steel Angle L75x75x6",
+    "category": "Steel",
+    "quantity": 550,
+    "unit": "kg",
+    "minStock": 100,
+    "updatedAt": "2026-02-19T13:50:11.862Z"
+  },
+  {
+    "id": "mat-002",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "name": "Galvanized Bolt M16x50",
+    "category": "Fasteners",
+    "quantity": 1900,
+    "unit": "pcs",
+    "minStock": 500,
+    "updatedAt": "2026-02-19T17:25:12.853Z"
+  },
+  {
+    "id": "mat-003",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "name": "Concrete Grade M30",
+    "category": "Concrete",
+    "quantity": 50,
+    "unit": "cum",
+    "minStock": 10,
+    "updatedAt": "2026-02-19T12:00:00Z"
+  },
+  {
+    "id": "mat-004",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "name": "ACSR Conductor Drake",
+    "category": "Conductor",
+    "quantity": 15000,
+    "unit": "m",
+    "minStock": 3000,
+    "updatedAt": "2026-02-19T12:00:00Z"
+  },
+  {
+    "id": "mat-005",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "name": "Insulator Disc 120kN",
+    "category": "Insulator",
+    "quantity": 200,
+    "unit": "pcs",
+    "minStock": 50,
+    "updatedAt": "2026-02-19T12:00:00Z"
+  },
+  {
+    "id": "mat-006",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "name": "Foundation Bolt M24x600",
+    "category": "Fasteners",
+    "quantity": 8000,
+    "unit": "pcs",
+    "minStock": 100,
+    "updatedAt": "2026-02-19T17:26:07.433Z"
+  },
+  {
+    "id": "mat-007",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "name": "Earth Wire 7/3.15mm",
+    "category": "Conductor",
+    "quantity": 5000,
+    "unit": "m",
+    "minStock": 1000,
+    "updatedAt": "2026-02-19T12:00:00Z"
+  },
+  {
+    "id": "mat-008",
+    "userId": "e25e964a-eb36-410d-ad11-176cec4c06cd",
+    "name": "Tower Steel Plate 10mm",
+    "category": "Steel",
+    "quantity": 301,
+    "unit": "kg",
+    "minStock": 50,
+    "updatedAt": "2026-02-19T17:23:38.611Z"
+  },
+  {
+    "id": "mat-1172d928",
+    "name": "User2 Steel",
+    "category": "Steel",
+    "quantity": 10,
+    "unit": "kg",
+    "minStock": 5,
+    "updatedAt": "2026-02-19T18:25:42.810Z"
+  }
+]
