@@ -87,5 +87,15 @@
     "unit": "kg",
     "minStock": 5,
     "updatedAt": "2026-02-19T18:25:42.810Z"
+  },
+  {
+    "id": "mat-1ea8cff3",
+    "userId": "23761ebf-53ff-48e3-8d90-be154b4438da",
+    "name": "wire coil",
+    "category": "Other",
+    "quantity": 10,
+    "unit": "pcs",
+    "minStock": 4,
+    "updatedAt": "2026-02-21T05:27:47.563Z"
   }
 ]
