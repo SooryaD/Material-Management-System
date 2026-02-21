@@ -1,42 +1,91 @@
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
+const express = require("express");
+const cors = require("cors");
+
+const authRoutes = require("./routes/auth");
+const materialsRoutes = require("./routes/materials");
+const transactionsRoutes = require("./routes/transactions");
+const dashboardRoutes = require("./routes/dashboard");
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Middleware
-app.use(cors({
-    origin: process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : ['http://localhost:5173', 'http://localhost:3000'],
-    credentials: true
-}));
+/* =========================
+   CORS Configuration
+========================= */
+
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(",")
+  : ["http://localhost:5173", "http://localhost:3000"];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      // allow requests with no origin (like Postman)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
-// Request logging
+/* =========================
+   Request Logger
+========================= */
+
 app.use((req, res, next) => {
-    const timestamp = new Date().toISOString().slice(11, 19);
-    console.log(`[${timestamp}] ${req.method} ${req.url}`);
-    next();
+  const time = new Date().toISOString();
+  console.log(`[${time}] ${req.method} ${req.url}`);
+  next();
 });
 
-// Routes
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/materials', require('./routes/materials'));
-app.use('/api/transactions', require('./routes/transactions'));
-app.use('/api/dashboard', require('./routes/dashboard'));
+/* =========================
+   Root Route (Fix Cannot GET /)
+========================= */
 
-// Health check
-app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', timestamp: new Date().toISOString() });
+app.get("/", (req, res) => {
+  res.send("🚀 Voltran Backend API is running on Render");
 });
 
-// Error handler
+/* =========================
+   API Routes
+========================= */
+
+app.use("/api/auth", authRoutes);
+app.use("/api/materials", materialsRoutes);
+app.use("/api/transactions", transactionsRoutes);
+app.use("/api/dashboard", dashboardRoutes);
+
+/* =========================
+   Health Check
+========================= */
+
+app.get("/api/health", (req, res) => {
+  res.json({
+    status: "ok",
+    timestamp: new Date().toISOString(),
+  });
+});
+
+/* =========================
+   Error Handler
+========================= */
+
 app.use((err, req, res, next) => {
-    console.error('Server Error:', err.message);
-    res.status(500).json({ error: 'Internal server error' });
+  console.error("Server Error:", err.message);
+  res.status(500).json({ error: err.message || "Internal Server Error" });
 });
+
+/* =========================
+   Start Server
+========================= */
 
 app.listen(PORT, () => {
-    console.log(`\n⚡ Voltran API Server running on http://localhost:${PORT}`);
-    console.log(`   Health check: http://localhost:${PORT}/api/health\n`);
+  console.log(`\n⚡ Voltran API Server running on port ${PORT}`);
 });
