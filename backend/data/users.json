@@ -34,5 +34,11 @@
     "username": "fresh_user",
     "password": "$2a$10$JYYFHuaovn4AAAvzPgrYhu/Ii6stXOZkYKq1bgjZftIiPa2Rhr5fC",
     "role": "USER"
+  },
+  {
+    "id": "23761ebf-53ff-48e3-8d90-be154b4438da",
+    "username": "admin@college.edu",
+    "password": "$2a$10$v9rQonAXj8d1HVgL3yzcxuHGkSHdjrx02yI3paNXFpy4JQvyeEhvW",
+    "role": "USER"
   }
 ]
